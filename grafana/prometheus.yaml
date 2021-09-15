@@ -381,9 +381,8 @@ spec:
   accessModes:
     - ReadWriteOnce
   persistentVolumeReclaimPolicy: Recycle
-  nfs:
-    path: /nfs/prometheus/data
-    server: 192.168.228.128
+  hostPath:
+    path: "/mnt/data"
 
 ---
 apiVersion: v1
